@@ -14,3 +14,6 @@ yay -S drawio flameshot-git obs-vkcapture surfshark-client telegram-desktop-bin 
 modprobe btusb
 systemctl enable tailscaled.service bluetooth.service
 systemctl start tailscaled.service bluetooth.service
+
+
+# per font scarica tamsyn o terminus
