@@ -1,0 +1,91 @@
+# ~/.config/yazi/theme.toml
+# Tema: Bianco, Nero & Oro
+
+[mgr]
+cwd = { fg = "#cba135" }
+
+# Ricerca (Find)
+find_keyword  = { fg = "#cba135", italic = true }
+find_position = { fg = "#ffffff", bg = "#000000", italic = true }
+
+# Marcatori di selezione/taglio/copia
+marker_copied   = { fg = "#cba135", bg = "#cba135" }
+marker_cut      = { fg = "#ffffff", bg = "#ffffff" }
+marker_selected = { fg = "#cba135", bg = "#cba135" }
+
+# Contatori
+count_copied   = { fg = "#000000", bg = "#cba135" }
+count_cut      = { fg = "#000000", bg = "#ffffff" }
+count_selected = { fg = "#000000", bg = "#cba135" }
+
+# Bordi
+border_symbol = "│"
+border_style  = { fg = "#ffffff" }
+
+[tabs]
+active = { fg = "#000000", bg = "#cba135", bold = true }
+inactive = { fg = "#ffffff", bg = "#000000" }
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = ""}
+
+# Barra di progresso
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#ffffff", bg = "#000000" }
+progress_error  = { fg = "#000000", bg = "#cba135" }
+
+# Colori dei permessi (es. rwxr-xr-x)
+perm_type = { fg = "#cba135" }
+perm_read = { fg = "#ffffff" }
+perm_write = { fg = "#ffffff" }
+perm_exec = { fg = "#cba135" }
+perm_sep = { fg = "#ffffff" }
+
+# Modalità (Normal, Select, Unset)
+[mode]
+normal_main = { fg = "#000000", bg = "#cba135", bold = true }
+select_main = { fg = "#000000", bg = "#ffffff", bold = true }
+unset_main  = { fg = "#000000", bg = "#ffffff", bold = true }
+
+[input]
+border   = { fg = "#cba135" }
+title    = { fg = "#ffffff" }
+value    = { fg = "#ffffff" }
+selected = { reversed = true }
+
+[tasks]
+border  = { fg = "#cba135" }
+title   = { fg = "#ffffff" }
+hovered = { fg = "#000000", bg = "#cba135", underline = true }
+
+[which]
+mask            = { bg = "#000000" }
+cand            = { fg = "#ffffff" }
+rest            = { fg = "#ffffff" }
+desc            = { fg = "#cba135" }
+separator       = "  "
+separator_style = { fg = "#cba135" }
+
+[help]
+on      = { fg = "#cba135" }
+run     = { fg = "#cba135" }
+desc    = { fg = "#ffffff" }
+hovered = { fg = "#000000", bg = "#cba135", bold = true }
+footer  = { fg = "#000000", bg = "#ffffff" }
+
+[filetype]
+# Regole per i colori di file e directory
+rules = [
+    # Le directory sono oro
+    { url = "*/", fg = "#cba135" },
+    # Tutti gli altri file sono bianchi
+    { url = "*", fg = "#ffffff" }
+]
+
+[icon]
+globs = []
+dirs = []
+files = []
+exts = []
+conds = []

@@ -1,0 +1,135 @@
+add_newline = true
+
+format = """
+$username on $os: \
+$directory\
+$python\
+$golang\
+$php\
+$java\
+$lua\
+$nodejs\
+$git_branch\
+$git_status\
+$character\
+"""
+
+[username]
+show_always = true
+style_user = "fg:#cba135"
+style_root = "fg:#800020"
+format = '[   $user]($style)'
+
+[directory]
+truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = ".../"
+style = "fg:#cba135"
+format = '[$path ]($style)'
+
+[shell]
+disabled = false
+
+[os]
+disabled = false
+format = "$symbol"
+
+[character]
+success_symbol = "[>](#cba135)"
+error_symbol = "[x](#ff4d00)"
+vimcmd_symbol = "[<](#cba135)"
+
+[git_branch]
+symbol = ""
+style = "fg:#f05032"
+format = "[$symbol $branch ]($style)"
+
+[git_status]
+style = "fg:#f05032"
+format = "[$all_status ]($style)"
+
+[os.symbols]
+# Alpine = "alp "
+Arch = "Arch"
+# Debian = "deb "
+# EndeavourOS = "ndev "
+# Fedora = "fed "
+# Gentoo = "gent "
+# Kali = "kali "
+# Macos = "mac "
+# Manjaro = "mjo "
+# Mint = "mint "
+# NixOS = "nix "
+# Pop = "pop "
+# Raspbian = "rasp "
+# Ubuntu = "ubnt "
+# Windows = "win "
+
+[c]
+symbol = "C"
+style = "fg:#2fd227"
+format = "[ $symbol $version]($style)"
+
+[python]
+symbol = ""
+style = 'fg:#2fd227'
+format = '[$symbol $version $virtualenv ]($style)'
+disabled = false
+
+[golang]
+symbol = " "
+style = "fg:#2596be"
+format = "[$symbol $version ]($style)"
+
+[php]
+symbol = ""
+style = "fg:#9558f8"
+format = "[$symbol $version ]($style)"
+
+[java]
+symbol = ""
+style = "fg:#58bef8"
+format = "[$symbol $version ]($style)"
+
+[lua]
+symbol = "lua"
+style = "fg:#0c26a9"
+format = "[$symbol $version ]($style)"
+
+[nodejs]
+symbol = ""
+style = "fg:#dceb12"
+format = "[$symbol $version ]($style)"
+
+# [cobol]
+# symbol = "cobol "
+#
+# [dart]
+# symbol = "dart "
+#
+# [dotnet]
+# symbol = ".NET "
+#
+# [docker_context]
+# symbol = "docker "
+#
+# [kotlin]
+# symbol = "kotlin "
+#
+# [nodejs]
+# symbol = "nodejs "
+#
+# [ocaml]
+# symbol = "ml "
+#
+# [ruby]
+# symbol = "rb "
+#
+# [rust]
+# symbol = "rs "
+#
+# [scala]
+# symbol = "scala "
+#
+# [swift]
+# symbol = "swift "
