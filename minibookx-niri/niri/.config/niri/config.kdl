@@ -301,8 +301,8 @@ spawn-sh-at-startup "mkfifo /tmp/wobpipe"
 spawn-sh-at-startup "tail -f /tmp/wobpipe | wob"
 
 // This line starts "low-battery-daemon" script
-spawn-sh-at-startup "~/.dotfiles/scripts/battery_low.sh"
-spawn-sh-at-startup "~/.dotfiles/scripts/low_ram.sh"
+spawn-sh-at-startup "~/.dotfiles/niri/.config/niri/scripts/battery_low.sh"
+spawn-sh-at-startup "~/.dotfiles/niri/.config/niri/scripts/low_ram.sh"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -402,19 +402,19 @@ window-rule {
 binds {
 
     // Show a system stats glance
-    Mod+I hotkey-overlay-title="Show system stats" {spawn "~/.dotfiles/scripts/stats.sh";}
+    Mod+I hotkey-overlay-title="Show system stats" {spawn "~/.dotfiles/niri/.config/niri/scripts/stats.sh";}
 
     // Show a connections status glance
-    Mod+Shift+C hotkey-overlay-title="Show wifi and bt status" {spawn "~/.dotfiles/scripts/stato_connessioni.sh";}
+    Mod+Shift+C hotkey-overlay-title="Show wifi and bt status" {spawn "~/.dotfiles/niri/.config/niri/scripts/stato_connessioni.sh";}
 
     // Show power mode menu
-    Mod+BackSpace hotkey-overlay-title="Show power mode menu" {spawn "~/.dotfiles/scriptspower_menu.sh";}
+    Mod+BackSpace hotkey-overlay-title="Show power mode menu" {spawn "~/.dotfiles/niri/.config/niri/script/spower_menu.sh";}
 
     // Lock the screen with a custom screensaver
-    Mod+Ctrl+Shift+l hotkey-overlay-title="Lock the screen" {spawn "~/.dotfiles/scripts/lock_screen.sh";}
+    Mod+Ctrl+Shift+l hotkey-overlay-title="Lock the screen" {spawn "~/.dotfiles/niri/.config/niri/scripts/lock_screen.sh";}
 
     // Change monitor setup when connected to external display
-    Mod+p hotkey-overlay-title="Change displlay output when connected" {spawn "~/.dotfiles/scripts/change_monitor.sh";}
+    Mod+p hotkey-overlay-title="Change displlay output when connected" {spawn "~/.dotfiles/niri/.config/niri/scripts/change_monitor.sh";}
 
     // Show keybinding cheat sheet
     Mod+Shift+Slash { show-hotkey-overlay; }
@@ -428,15 +428,15 @@ binds {
     // Audio, Mute and Microphone keybindings
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1.0 && wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}' > /tmp/wobpipe"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}' > /tmp/wobpipe"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && sh ~/wob_control_mute.sh"; }
-    Ctrl+XF86AudioMute   allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && sh ~/wob_control_mic.sh"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && sh ~/.dotfiles/niri/.config/niri/scripts/wob_control_mute.sh"; }
+    Ctrl+XF86AudioMute   allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && sh ~/.dotfiles/niri/.config/niri/scripts/wob_control_mic.sh"; }
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
 
     // Multimedia keybindings
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    // XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    // XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+    // XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    // XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // Brightness keybindings
     XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl --class=backlight set 5%+ -m | cut -d, -f4  | tr -d % > /tmp/wobpipe"; }
