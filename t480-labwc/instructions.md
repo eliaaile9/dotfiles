@@ -28,11 +28,21 @@ Edit the `/etc/pacman.conf` file and uncomment the following lines:
 [multilib]
 include = /etc/pacman.d/mirrorlist
 ```
-Then sync the repositort with `sudo pacman -Syy`.
+Then sync the repository:
+```sh
+sudo pacman -Syy
+```
 
-## Run setup script
+## Download dotfiles
 
-After generating the ssh key run the `setup.sh` script
+Download dotfiles using `git` and the previous ssh key:
+```sh
+git clone git@github.com:eliaaile9/dotfiles.git
+```
+Make executable the `setup.sh` script and run it:
+```sh
+sudo chmod +x setup.sh && ./setup.sh
+```
 
 ## Miscellaneous
 
@@ -59,6 +69,10 @@ The file `/etc/samba/credentials` follows this declaration:
 username=username
 password=password
 ```
+
+## Printing service
+
+Visit `localhost:631` in the browser, go in the administration panel and add the wanted printer.
 
 ## Enable Tailscale
 
