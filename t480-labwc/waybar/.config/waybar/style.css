@@ -1,0 +1,17 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Terminus;
+}
+
+#waybar {
+    background-color: #011e30;
+    color: #d6deeb;
+    font-size: 14px;
+}
+
+#waybar .module {
+    padding: 0 4px;
+    margin: 0 4px;
+}
