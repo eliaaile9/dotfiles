@@ -19,11 +19,12 @@ makepkg -si
 cd ..
 rm -rf yay*
 
-sudo pacman --needed -S 7zip brightnessctl btop cifs-utils cliphist cups cups-pdf curl discord dunst epson-inkjet-printer-escpr2 evince fastfetch firefox foot gimp imagemagick jdk21-openjdk jq lua mpv neovim npm nwg-look obs-studio obsidian onefetch pacman-contrib parted pavucontrol playerctl python samba scrot slurp starship steam stow stylua tailscale tar thunar tlp tmux ttf-terminus-nerd unrar unzip virtualbox virtualbox-host-modules-arch waybar wine wget wl-clipboard wlsunset zip
+sudo pacman --needed -S 7zip brightnessctl btop cifs-utils cliphist cups cups-pdf curl discord epson-inkjet-printer-escpr2 evince fastfetch firefox foot gimp imagemagick jdk21-openjdk jq lua mpv neovim npm nwg-look obs-studio obsidian onefetch pacman-contrib parted pavucontrol playerctl python samba scrot slurp starship steam stow stylua tailscale tar thunar ttf-terminus-nerd unrar unzip virtualbox virtualbox-host-modules-arch waybar wine wget wl-clipboard wlsunset zip
 
-yay -S arc-darkest-theme-git drawio obs-vkcapture papirus-icon-theme surfshark-client tf-devicons ttf-font-awesome ttf-ibmplex-mono-nerd vimix-cursors
+yay -S arc-darkest-theme-git bottles drawio obs-vkcapture papirus-icon-theme surfshark-client tf-devicons ttf-font-awesome ttf-ioskeley-mono vimix-cursors
 
-systemctl enable --now tailscaled.service
+sudo systemctl enable --now tailscaled.service
+sudo systemctl enable --now cups.service
 
 mkdir ~/.dotfiles
 git clone git@github.com:eliaaile9/dotfiles.git
