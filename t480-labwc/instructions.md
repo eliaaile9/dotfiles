@@ -53,6 +53,19 @@ The followings dictate the pairing:
 - Font: `Ioskeley Mono Regular 11`
 - Icons: `Papirus-Dark`
 - Cursor: `Vimix Cursors`
+## Enable Tailscale
+
+
+> Is advised to reboot the system before proceeding
+
+Start and enable the Tailscale service:
+```sh
+sudo systemctl enable tailscaled.service && sudo systemctl start tailscaled.service
+```
+Then start the Tailscale daemon and follow the instructions in the browser:
+```sh
+sudo tailscale up
+```
 
 ## SAMBA Volumes
 
@@ -73,19 +86,6 @@ password=password
 ## Printing service
 
 Visit `localhost:631` in the browser, go in the administration panel and add the wanted printer.
-
-## Enable Tailscale
-
-> Is advised to reboot the system before proceeding
-
-Start and enable the Tailscale service:
-```sh
-sudo systemctl enable tailscaled.service && sudo systemctl start tailscaled.service
-```
-Then start the Tailscale daemon and follow the instructions in the browser:
-```sh
-sudo tailscale up
-```
 
 ## Git commit editor
 
