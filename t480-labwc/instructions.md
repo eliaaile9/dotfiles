@@ -86,3 +86,10 @@ Then start the Tailscale daemon and follow the instructions in the browser:
 ```sh
 sudo tailscale up
 ```
+
+## Git commit editor
+
+Use this command to change the default git commit editor from `vi` to `nvim`:
+```sh
+git config --global core.editor nvim
+```
