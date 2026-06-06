@@ -19,7 +19,7 @@ makepkg -si
 cd ..
 rm -rf yay*
 
-sudo pacman -S 7zip brightnessctl btop cifs-utils cliphist cups cups-pdf curl epson-inkjet-printer-escpr2 evince fastfetch foot fuzzel grim iio-sensor-proxy imagemagick jdk21-openjdk jq lua mpv neovim npm nwg-look obsidian onefetch pacman-contrib pavucontrol pcmanfm poppler python ripgrep samba scrot  slurp starship stow tailscale tar texlive-basic texlive-binextra texlive-latex texlive-latexrecommended texlive-plaingeneric texlive-latexextra texlive-bibtexextra texlive-fontsrecommended texlive-pictures texlive-mathscience thunar tlp tmux ttf-iosevka-nerd ttf-terminus-nerd unrar unzip wget wl-clipboard yazi zip zoxide
+sudo pacman -S 7zip biber brightnessctl btop cifs-utils cliphist cups cups-pdf curl epson-inkjet-printer-escpr2 evince fastfetch foot fuzzel grim iio-sensor-proxy imagemagick jdk21-openjdk jq lua mpv neovim npm nwg-look obsidian onefetch pacman-contrib pavucontrol pcmanfm poppler python ripgrep samba scrot  slurp starship stow tailscale tar texlive-basic texlive-binextra texlive-latex texlive-latexrecommended texlive-plaingeneric texlive-latexextra texlive-bibtexextra texlive-fontsrecommended texlive-pictures texlive-mathscience thunar tlp tmux ttf-iosevka-nerd ttf-terminus-nerd unrar unzip wget wl-clipboard yazi zip zoxide
 
 yay -S awww-bin graphite-gtk-theme-black-git librewolf-bin rot8-git surfshark-client surfshark-vpn-cli-bin suru-plus-dark-git ttf-devicons ttf-font-awesome vimix-cursors
 
