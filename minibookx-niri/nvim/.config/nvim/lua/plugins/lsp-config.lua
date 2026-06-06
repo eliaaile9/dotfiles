@@ -23,6 +23,7 @@ return {
 					"intelephense", -- PHP
 					"clangd", -- C
 					"asm_lsp", --Assembly
+                    "texlab", --LaTeX
 				},
 			})
 		end,
@@ -53,6 +54,28 @@ return {
 				},
 			})
             vim.lsp.enable("lua_ls")
+
+            vim.lsp.config("texlab", {
+                capabilities = capabilities,
+                settings = {
+                    texlab = {
+                        build = {
+                            -- IMPORTANTE: false! Lasciamo compilare a VimTeX per evitare conflitti
+                            onSave = false, 
+                        },
+                        forwardSearch = {
+                            -- Configurato per Okular. Se usi Evince, cambia in "evince"
+                            executable = "zathura", 
+                            args = { "--synctex-forward", "%l:1:%f", "%p" },
+                        },
+                        chktex = {
+                            onOpenAndSave = true,
+                            onType = false,
+                        },
+                    },
+                },
+            })
+            vim.lsp.enable("texlab")
 
 			-- lspconfig.gopls.setup({
 			-- 	capabilities = capabilities,
