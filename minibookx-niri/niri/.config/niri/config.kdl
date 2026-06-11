@@ -279,8 +279,8 @@ overview {
 
 recent-windows {
     highlight {
-        active-color "#53ff6c"
-        urgent-color "#ff5ef1"
+        active-color "#cba135"
+        // urgent-color "#ff5ef1"
         padding 4
     }
 }
