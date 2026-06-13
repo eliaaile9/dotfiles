@@ -46,15 +46,15 @@ sudo chmod +x setup.sh && ./setup.sh
 
 ## Miscellaneous
 
-After the system has been set up open nwg-look to change the cursor's theme, the general gtk theme, the gtk font and the icon's theme.
+After the system has been set up open `nwg-look` to change the cursor's theme, the general gtk theme, the gtk font and the icon's theme.
 
 The followings dictate the pairing:
 - General Theme: `Arc-Darkest`
 - Font: `Ioskeley Mono Regular 11`
 - Icons: `Papirus-Dark`
 - Cursor: `Vimix Cursors`
-## Enable Tailscale
 
+## Enable Tailscale
 
 > Is advised to reboot the system before proceeding
 
@@ -71,16 +71,21 @@ sudo tailscale up
 
 Add to `/etc/fstab` the following line:
 ```
-//your_nas_ip/source_directory /mnt/target_directory cifs noauto,x-systemd.automount,x-systemd.requires=network-online.target,_netdev,credentials=/etc/samba/credentials,uid=1000,gid=1000 0 0
+//your_nas_ip/source_directory /mnt/target_directory cifs noauto,x-systemd.automount,x-systemd.requires=network-online.target,_netdev,credentials=/etc/samba/.credentials,uid=1000,gid=1000 0 0
 ```
 Replace `your_nas_ip` with the IP of the nas which have the samba volume.
-Replace `source_directory` with the samba volume on your nas.
+Replace `source_directory` with the samba volume on your nas. It can be found under `/etc/samba/smb.conf`.
 Replace `target_directory` with the name of the directory that will be mounted on the filesystem.
 
-The file `/etc/samba/credentials` follows this declaration:
+The file `/etc/samba/.credentials` follows this declaration:
 ```
 username=username
 password=password
+```
+Then, give the right permissions to `/etc/samba/.credentials`:
+```sh 
+sudo chown root:root /etc/samba/.credentials
+sudo chmod 600 /etc/samba/.credentials
 ```
 
 ## Printing service
