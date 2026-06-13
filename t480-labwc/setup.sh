@@ -18,20 +18,20 @@ sudo systemctl enable --now bluetooth
 sudo systemctl enable --now NetworkManager
 sudo systemctl enable --now cups.service
 
-echo -e "Done!\nCloning and installing yay AUR helper...\n"
+echo -e "Done!\nCloning and installing paru AUR helper...\n"
 cd ~
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
 cd ..
-echo -e "Done!\nTidying up yay install...\n"
-rm -rf yay*
+echo -e "Done!\nTidying up paru install...\n"
+rm -rf paru*
 
 echo -e "Done!\nDownloading all necessary packages from pacman...\n"
 sudo pacman -S 7zip brightnessctl btop cifs-utils cliphist curl discord evince fastfetch foot fuzzel gimp grim imagemagick jdk21-openjdk jq lua mpv neovim npm nwg-look obs-studio obsidian onefetch pacman-contrib parted pavucontrol playerctl python rustup samba scrot slurp starship steam stow stylua swappy swaybg swaylock swaync tailscale tar telegram-desktop thunar ttf-terminus-nerd unrar unzip virtualbox virtualbox-host-modules-arch waybar wine wget wl-clipboard wlr-randr wlsunset zip
 
 echo -e "Done!\nDownloading all necessary packages from yay...\n"
-yay -S arc-darkest-theme-git bottles drawio-desktop-bin epson-inkjet-printer-escpr2 librewolf-bin obs-vkcapture papirus-icon-theme surfshark-client surfshark-vpn-cli-bin ttf-devicons ttf-font-awesome ttf-ioskeley-mono vimix-cursors xkblayout-state zen-browser-bin
+paru -S arc-darkest-theme-git bottles drawio-desktop-bin epson-inkjet-printer-escpr2 librewolf-bin obs-vkcapture papirus-icon-theme surfshark-client surfshark-vpn-cli-bin ttf-devicons ttf-font-awesome ttf-ioskeley-mono vimix-cursors xkblayout-state zen-browser-bin
 
 echo -e "Done!\nDownloading rust, rustc and cargo...\n"
 rustup default stable
@@ -42,8 +42,8 @@ cp -r ~/dotfiles/t480-labwc/* ~/.dotfiles
 cd ~/.dotfiles
 rm instructions.md setup.sh
 rm ~/.bashrc
-for app in $(ls -d */ | sed 's/\///'); do
-    stow -v "$app"
+for app in */; do
+    stow -v "${app%/}";
 done
 
 echo -e "Done!\nMaking executable all the script files...\n"
