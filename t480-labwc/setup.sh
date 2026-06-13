@@ -10,7 +10,7 @@ echo -e "Done!\nSyncing pacman database...\n"
 sudo pacman -Syy
 
 echo -e "Done!\nInstalling essential packages and services...\n"
-sudo pacman -S base-devel bluez bluez-utils cups cups-pdf git intel-ucode mesa networkmanager openssh pipewire pipewire-pulse pipewire-alsa pipewire-jack playerctl udiskie udisks2 vulkan-intel wireplumber
+sudo pacman -S alsa-utils base-devel bluez bluez-utils cups cups-pdf git intel-ucode mesa networkmanager openssh pipewire pipewire-pulse pipewire-alsa pipewire-jack playerctl udiskie udisks2 vulkan-intel wireplumber
 
 echo -e "Done!\nEnabling and starting essential services...\n"
 sudo systemctl enable --now sshd
