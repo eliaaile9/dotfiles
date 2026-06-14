@@ -2,9 +2,9 @@
 
 Install the packages needed for retrieving the dotfiles and the setup script:
 ```sh 
-sudo pacman -S git qutebrowser
+sudo pacman -S git firefox
 ```
-Later, in the `setup.sh` file, `qutebrowser` will be uninstalled.
+Later, in the `setup.sh` file, `firefox` will be uninstalled.
 
 ## Generate ssh keys for github
 
@@ -28,11 +28,17 @@ Edit the `/etc/pacman.conf` file and uncomment the following lines:
 [multilib]
 include = /etc/pacman.d/mirrorlist
 ```
+Edit pacman's misc options. Search and modify the following lines:
+```sh
+Color
+VerbosePkgLists
+ParallelDownloads = 20
+ILoveCandy
+```
 Then sync the repository:
 ```sh
 sudo pacman -Syy
 ```
-
 ## Download dotfiles
 
 Download dotfiles using `git` and the previous ssh key:
@@ -43,7 +49,6 @@ Make executable the `setup.sh` script and run it:
 ```sh
 sudo chmod +x setup.sh && ./setup.sh
 ```
-
 ## Miscellaneous
 
 After the system has been set up open `nwg-look` to change the cursor's theme, the general gtk theme, the gtk font and the icon's theme.
@@ -56,7 +61,8 @@ The followings dictate the pairing:
 
 ## Enable Tailscale
 
-> Is advised to reboot the system before proceeding
+>![danger]
+Is advised to reboot the system before proceeding
 
 Start and enable the Tailscale service:
 ```sh
@@ -87,7 +93,6 @@ Then, give the right permissions to `/etc/samba/.credentials`:
 sudo chown root:root /etc/samba/.credentials
 sudo chmod 600 /etc/samba/.credentials
 ```
-
 ## Printing service
 
 Visit `localhost:631` in the browser, go in the administration panel and add the wanted printer.
