@@ -4,8 +4,6 @@ Install the packages needed for retrieving the dotfiles and the setup script:
 ```sh 
 sudo pacman -S git firefox
 ```
-Later, in the `setup.sh` file, `firefox` will be uninstalled.
-
 ## Generate ssh keys for github
 
 Use the following command to generate a new github ssh key:
