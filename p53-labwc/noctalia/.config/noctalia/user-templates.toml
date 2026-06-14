@@ -1,6 +1,16 @@
 [config]
 
-[templates]
+[template.btop]
+input_path = "/home/elia/.config/noctalia/templates/btop.theme"
+output_path = "/home/elia/.config/btop/themes/noctalia.theme"
+
+[template.gtk3]
+input_path = "/home/elia/.config/noctalia/templates/gtk3.css"
+output_path = "/home/elia/.config/gtk-3.0/noctalia.css"
+
+[template.gtk4]
+input_path = "/home/elia/.config/noctalia/templates/gtk4.css"
+output_path = "/home/elia/.config/gtk-4.0/noctalia.css"
 
 # User-defined templates
 # Add your custom templates below
