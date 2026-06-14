@@ -1,0 +1,40 @@
+{
+    "sources": [
+        {
+            "enabled": true,
+            "name": "Noctalia Plugins",
+            "url": "https://github.com/noctalia-dev/noctalia-plugins"
+        }
+    ],
+    "states": {
+        "battery-monitor-plus": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "clipboard": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "dns-switcher": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "tailscale": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "timer": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "todo": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "usb-drive-manager": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        }
+    },
+    "version": 2
+}

@@ -1,0 +1,43 @@
+{
+  "todos": [
+    {
+      "id": 1781426702948,
+      "text": "sistemare copy paste",
+      "completed": false,
+      "createdAt": "2026-06-14T08:45:02.948Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781389391174,
+      "text": "fare funzionare fiio dac",
+      "completed": false,
+      "createdAt": "2026-06-13T22:23:11.174Z",
+      "pageId": 0,
+      "priority": "high",
+      "details": ""
+    }
+  ],
+  "pages": [
+    {
+      "id": 0,
+      "name": "General"
+    }
+  ],
+  "current_page_id": 0,
+  "count": 2,
+  "completedCount": 0,
+  "showCompleted": true,
+  "showBackground": true,
+  "isExpanded": false,
+  "useCustomColors": false,
+  "priorityColors": {
+    "high": "#ffb4ab",
+    "medium": "#99cbff",
+    "low": "#c2c7cf"
+  },
+  "exportPath": "~/Documents",
+  "exportFormat": "markdown",
+  "exportEmptySections": false
+}
