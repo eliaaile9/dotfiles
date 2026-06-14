@@ -101,3 +101,6 @@ Use this command to change the default git commit editor from `vi` to `nvim`:
 ```sh
 git config --global core.editor nvim
 ```
+## Calendars
+
+Use `gnome-online-accounts` and `gnome-online-accounts-gtk` to add your desired account(s), then visualize it/them in `gnome-calendar`
