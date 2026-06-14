@@ -1,0 +1,25 @@
+ignore-empty-password
+show-failed-attempts
+daemonize
+font=Terminess Nerd Font
+font-size=20
+indicator-radius=60
+indicator-thickness=10
+indicator-idle-visible
+key-hl-color=#011e30
+inside-color=#000000
+line-color=#011e30
+ring-color=#000000
+text-color=#5e7b8b
+inside-clear-color=#5e7b8b
+line-clear-color=#000000
+ring-clear-color=#5e7b8b
+text-clear-color=#011e30
+inside-ver-color=#000000
+line-ver-color=#011e30
+ring-ver-color=#000000
+text-ver-color=#ffffff
+inside-wrong-color=#ff0101
+line-wrong-color=#000000
+ring-wrong-color=#ff0101
+text-wrong-color=#000000
