@@ -1,9 +1,72 @@
 {
   "todos": [
     {
+      "id": 1781562387807,
+      "text": "sistemare colori fuzzel e foot e firefox",
+      "completed": false,
+      "createdAt": "2026-06-15T22:26:27.807Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781562364501,
+      "text": "sistemare dotfiles p53",
+      "completed": false,
+      "createdAt": "2026-06-15T22:26:04.501Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781562333691,
+      "text": "sistemare vpn surfshark",
+      "completed": false,
+      "createdAt": "2026-06-15T22:25:33.691Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781562324907,
+      "text": "rimuovere script screenshot per p53",
+      "completed": false,
+      "createdAt": "2026-06-15T22:25:24.907Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781526471220,
+      "text": "piantare i fagioli 16/06",
+      "completed": false,
+      "createdAt": "2026-06-15T12:27:51.220Z",
+      "pageId": 0,
+      "priority": "high",
+      "details": ""
+    },
+    {
+      "id": 1781476833011,
+      "text": "sistemare autotag nvim",
+      "completed": false,
+      "createdAt": "2026-06-14T22:40:33.011Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781476788429,
+      "text": "sistema setup.sh in tutti dotfiles. rustup > paru",
+      "completed": false,
+      "createdAt": "2026-06-14T22:39:48.429Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
       "id": 1781426702948,
       "text": "sistemare copy paste",
-      "completed": false,
+      "completed": true,
       "createdAt": "2026-06-14T08:45:02.948Z",
       "pageId": 0,
       "priority": "medium",
@@ -12,10 +75,46 @@
     {
       "id": 1781389391174,
       "text": "fare funzionare fiio dac",
-      "completed": false,
+      "completed": true,
       "createdAt": "2026-06-13T22:23:11.174Z",
       "pageId": 0,
       "priority": "high",
+      "details": ""
+    },
+    {
+      "id": 1781476766009,
+      "text": "collega calendario infomaniak",
+      "completed": true,
+      "createdAt": "2026-06-14T22:39:26.009Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781476853522,
+      "text": "aggiungere ollama a nvim",
+      "completed": true,
+      "createdAt": "2026-06-14T22:40:53.522Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781540460275,
+      "text": "far vedere pc ad arianna",
+      "completed": true,
+      "createdAt": "2026-06-15T16:21:00.275Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781476819755,
+      "text": "sistema center in server in setup p53",
+      "completed": true,
+      "createdAt": "2026-06-14T22:40:19.755Z",
+      "pageId": 0,
+      "priority": "medium",
       "details": ""
     }
   ],
@@ -26,8 +125,8 @@
     }
   ],
   "current_page_id": 0,
-  "count": 2,
-  "completedCount": 0,
+  "count": 13,
+  "completedCount": 6,
   "showCompleted": true,
   "showBackground": true,
   "isExpanded": false,
