@@ -141,16 +141,15 @@
             <action name="Reconfigure" />
         </keybind>
         <keybind key="W-d">
-            <action name="Execute" command="fuzzel" />
+            <action name="Execute" command="qs -c noctalia-shell ipc call launcher toggle" />
+        </keybind>
+        <keybind key="W-i">
+            <action name="Execute" command="qs -c noctalia-shell ipc call settings toggle" />
         </keybind>
         <keybind key="W-p">
             <action name="Execute" command="~/.dotfiles/labwc/.config/labwc/scripts/change_monitor.sh" />
         </keybind>
         <keybind
-            key="C-S-P">
-            <action name="Execute" command="~/.dotfiles/labwc/.config/labwc/scripts/take_screenshot.sh" />
-        </keybind>
-               <keybind
             key="W-S-C-L">
             <action name="Execute" command="~/.dotfiles/labwc/.config/labwc/scripts/lock_screen.sh" />
         </keybind>
