@@ -3,7 +3,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias connecteduroam='nmcli con add type wifi con-name "eduroam" ifname wlan0 ssid "eduroam" wifi-sec.key-mgmt wpa-eap 802-1x.identity "elia.cortesi@studenti.unimi.it" 802-1x.password "inserire_password" 802-1x.system-ca-certs yes 802-1x.eap "peap" 802-1x.phase2-auth mschapv2'
+alias connecteduroam='nmcli con add type wifi con-name "eduroam" ifname wlan0 ssid "eduroam" wifi-sec.key-mgmt wpa-eap 802-1x.identity "inserire_email" 802-1x.password "inserire_password" 802-1x.system-ca-certs yes 802-1x.eap "peap" 802-1x.phase2-auth mschapv2'
 alias jn='jupyter notebook'
 alias mars='java -jar ~/uni/archi2/Mars4_5.jar'
 alias gcc='gcc -fpermissive'
