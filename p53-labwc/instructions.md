@@ -180,3 +180,8 @@ Then add your user to the `audio` group:
 sudo usermod -aG audio $USER
 ```
 
+## VPN
+
+Go to vpn's website (for example Surfshark) and log in.
+Store the credentials and the wanted locations' configuration files.
+In the settings of `network-manager-vpn` noctalia's plugin add the openvpn files and login with the credentials.
